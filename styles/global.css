@@ -50,15 +50,25 @@ img {
   margin-inline: auto;
 }
 
+
 main {
-  margin-top: 40px;
+  margin-block: 40px;
   padding-inline: 32px;
+  gap: 80px;
+  column-gap: 32px;
+
+  grid-template-columns: 2.1fr 1.4fr;
+
+  grid-template-areas: 
+  "featured featured"
+  "weekly weekly"
+  "ai aside";
 }
 
 .content-tag {
   display: inline-block;
   background-color: var(--brand-color-dark);
-  padding: 4px 8px;
+  padding: 5px 8px;
   border-radius: 6px;
   font: 500 10px/1.2 var(--font-family);
   text-transform: uppercase;
@@ -66,4 +76,5 @@ main {
   color: var(--text-color-primary);
   box-shadow: 0px 4px 16px rgba(2, 6, 23, 0.251);
 }
+
 
